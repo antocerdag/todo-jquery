@@ -2,8 +2,9 @@ nav{
 	background-color: #EECD17;
 }
 
-.text-logo{
+nav .nav-wrapper a{
 	color: black;
+	margin-left: 2%;
 }
 
 .caja-tareas{
@@ -28,4 +29,24 @@ nav{
 .titulo{
 	margin-left: 3%;
     font-size: 19px;
+}
+
+.tareas-nuevas {
+	margin-left: 3%;
+}
+
+
+.btn-basurero .fa {
+    font-size: 26px;
+    color: whitesmoke;
+    margin-left: 1%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #EECD17;
+    border-radius: 20px;
+}
+
+.caja hr{
+	width: 92%;
 }
