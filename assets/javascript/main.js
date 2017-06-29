@@ -7,18 +7,20 @@ $(document).ready(function(){
 		if (key == 13) {
 
 			var tareaNueva = $(".input-box").val();
-			var nuevaTarea = $(".tareas-nuevas").append("<p> <input type='checkbox' id='test5 checkbox'/><label>" + tareaNueva + "</label> <a href='' class='btn-basurero' type='button'><i class='fa fa-trash-o' aria-hidden='true'></i></a> </p>");
+			var nuevaTarea = $('.tareas-nuevas').append("<li> <input type='checkbox' class='checkbox' id='test5'/>" + tareaNueva 
+				+ "<button class='btn-basurero remove right' type='button'><i class='fa fa-trash-o' aria-hidden='true'></i></button> </li>");
 			$(".input-box").val(" ");
 
-			$(".checkbox").click(function(m){
-				var tareaNueva = $(".input-box").val();
-			$(m).append(nuevaTarea);
+		};
+		$(".checkbox").click(function(){
+				
+			$(".tareas-completas").append(nuevaTarea);
 			});
-
-			$(".btn-basurero").click(function(r){
-				$(r).remove();
+		
+			$("button").click(function(r){
+				$(this).parent().remove();
 			})
-		}
+		
 	});
 
 

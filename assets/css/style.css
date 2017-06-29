@@ -6,6 +6,9 @@ nav .nav-wrapper a{
 	color: black;
 	margin-left: 2%;
 }
+.text-logo{
+    font-family: 'Pacifico', cursive;
+}
 
 .caja-tareas{
     width: 100%;
@@ -35,18 +38,33 @@ nav .nav-wrapper a{
 	margin-left: 3%;
 }
 
-
+button{
+    background-color: #EECD17;
+    border-radius: 50%;
+    border: none;
+    width: 4%;
+}
+button:hover{
+    background-color: #FF8000;
+}
 .btn-basurero .fa {
     font-size: 26px;
     color: whitesmoke;
-    margin-left: 1%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background-color: #EECD17;
-    border-radius: 20px;
+    
 }
-
+.caja {
+        width: 97%;
+}
 .caja hr{
 	width: 92%;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
 }
